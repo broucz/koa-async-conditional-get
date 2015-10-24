@@ -1,5 +1,5 @@
 {
-  "name": "koa-conditional-get",
+  "name": "koa-async-conditonal-get",
   "private": true,
   "version": "0.1.0",
   "description": "Async conditional get support for Koa responses",
