@@ -8,6 +8,10 @@
 
 +/- the async version of [koa-conditional-get](https://github.com/koajs/conditional-get).
 
+:bulb:**This middleware is designed for [Koa](https://github.com/koajs/koa) v2.x.x and use [Babel](https://babeljs.io/) for ES5 compatibility.**
+
+:wrench:**This middleware is a work-in-progress**. Feedback / PR are welcome and encouraged. If you'd like to collaborate on this project, let me know.
+
 ## Installation
 
 ```
