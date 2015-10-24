@@ -1,0 +1,40 @@
+{
+  "name": "koa-conditional-get",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Async conditional get support for Koa responses",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf release coverage",
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --compilers js:babel/register",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --compilers js:babel/register",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --compilers js:babel/register",
+    "build": "./node_modules/.bin/babel ./src --out-dir ./release"
+  },
+  "author": "Pierre Brouca <pierre.brouca@icloud.com> (https://github.com/broucz)",
+  "license": "MIT",
+  "homepage": "https://github.com/broucz/koa-conditional-get#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/broucz/koa-conditional-get.git"
+  },
+  "bugs": {
+    "url": "https://github.com/broucz/koa-conditional-get/issues"
+  },
+  "keywords": [
+    "koa",
+    "confitional-get",
+    "async"
+  ],
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-runtime": "^5.8.25",
+    "chai": "^3.4.0",
+    "istanbul": "^0.4.0",
+    "koa": "^2.0.0 || ^2.0.0-alpha.1",
+    "koa-async-etag": "^0.1.0",
+    "mocha": "^2.3.3",
+    "rimraf": "^2.4.3",
+    "supertest": "^1.1.0"
+  }
+}
